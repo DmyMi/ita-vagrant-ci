@@ -12,11 +12,7 @@ sudo tar -xvf go1.9.2.linux-amd64.tar.gz
 
 sudo mv go /usr/local
 
-sudo echo "export PATH=$PATH:/usr/local/go/bin" >> /etc/profile.d/go.sh
-
-sudo echo "export GOROOT=$HOME/go" >> /etc/profile.d/go.sh
-
-sudo echo "export PATH=$PATH:$GOROOT/bin" >> /etc/profile.d/go.sh
+sudo echo "export PATH=$PATH:/usr/local/go/bin" | sudo tee /etc/profile.d/go.sh
 
 sudo npm install -g typescript
 
