@@ -14,15 +14,11 @@ sudo mv go /usr/local
 
 sudo echo "export PATH=$PATH:/usr/local/go/bin" >> /etc/profile.d/go.sh
 
-sudo echo "export GOROOT=$HOME/go" >> /etc/profile.d/go.sh
-
-sudo echo "export PATH=$PATH:$GOROOT/bin" >> /etc/profile.d/go.sh
-
 sudo npm install -g typescript
 
 sudo npm install -g webpack
 
-sudo npm install -g @angular/cli
+sudo npm install -g @angular/cli --unsafe
 
 sudo apt-get autoclean -y
 
